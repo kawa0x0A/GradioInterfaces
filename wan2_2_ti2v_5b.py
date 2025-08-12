@@ -15,6 +15,7 @@ warnings.filterwarnings('ignore')
 # Model
 sys.path.insert(
     0, os.path.sep.join(osp.realpath(__file__).split(os.path.sep)[:-2]))
+sys.path.insert(0, osp.join(osp.dirname(__file__), '..', 'Wan2.2'))
 import wan
 from wan.configs import MAX_AREA_CONFIGS, SIZE_CONFIGS, WAN_CONFIGS, SUPPORTED_SIZES
 from wan.utils.utils import save_video
